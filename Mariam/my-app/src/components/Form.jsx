@@ -1,9 +1,13 @@
 import { useState } from "react";
+import Items from "./Items";
 
 export default function Form(){
-    const [name, setName]=useState({firsName :"", lastName:""});
+    // const [name, setName]=useState({firsName :"", lastName:""});
+    // const [items, itemsTodo] = useState("");
+    const[todo, setTodo] = useState("");
     function addsubmit (e){
-        e.preventDefault();
+    e.preventDefault();
+    
      
 
     }
@@ -15,18 +19,19 @@ export default function Form(){
             <label> First Name : </label>
             <br /> 
             <br />
-            <input onChange ={(e) => setName({firsName:e.target.value})} type="text" value={name.firsName}/>
+            <input onChange ={(name) => setTodo({firsName:firsName.target.value})} type="text" value={todo.firsName}/>
             <br />
             <label> Last Name : </label>
             <br />
             <br />
-            <input onChange ={(e) => setName({lastName:e.target.value})} type="text" value={name.lastName}/>
+            <input onChange ={(name) => setTodo({lastName.target.value})} type="text" value={todo.lastName}/>
             <br />
-            <button onClick={(e)=> addsubmit(e)}> Add </button>
+            <button onClick={(name)=> addsubmit(e)}> Add </button>
 
             </form>
-
-        
+            {name.map((item) => (
+                <Item  />
+            ))}
             </div>
 
         );
