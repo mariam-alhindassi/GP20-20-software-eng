@@ -29,12 +29,12 @@ const MasterLayout = ({ children }) => {
                 <div className="mobile-menu__inner">
                     <Link to="/" className="mobile-menu__logo">
                         <img
-                            src="assets/images/logo/logo.png"
+                            src="assets/images/logo/str-logo.png"
                             alt="Logo"
                             className="white-version"
                         />
                         <img
-                            src="assets/images/logo/white-logo-two.png"
+                            src="assets/images/logo/str-logo.png"
                             alt="Logo"
                             className="dark-version"
                         />
@@ -197,12 +197,12 @@ const MasterLayout = ({ children }) => {
                         <div className="dashboard-sidebar__inner">
                             <Link to="/" className="logo mb-48">
                                 <img
-                                    src="assets/images/logo/logo.png"
+                                    src="assets/images/logo/str-logo.png"
                                     alt=""
                                     className="white-version"
                                 />
                                 <img
-                                    src="assets/images/logo/white-logo-two.png"
+                                    src="assets/images/logo/str-logo.png"
                                     alt=""
                                     className="dark-version"
                                 />
