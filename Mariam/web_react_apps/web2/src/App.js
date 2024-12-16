@@ -1,6 +1,7 @@
-
+import React from 'react';
 import './App.css';
-import Registration from './registration.';
+import Form from './Components/Form';
+
 
 
 function App() {
@@ -8,9 +9,10 @@ function App() {
     
     function App() {
       return (
-        <main className='App'>
-          <App />
-        </main>
+        <div className='App'>
+            <Form />
+
+        </div>
       )
     }
   );
