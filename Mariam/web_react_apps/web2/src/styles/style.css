@@ -1,0 +1,46 @@
+h1 {
+    text-align:  center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: black;
+    align-items: center;
+    text-align: center;
+    
+
+}
+button {
+    background-color: green;
+    color: white;
+    display: inline-block;
+    size: 50;
+    border: 20vmax;
+}
+
+input[type=text]  {
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+input [type=label]{
+    text-align: center;
+    color: blue;
+}
+
+.div1 {
+    background-color: white;
+    align-items: center;
+    width: 400;
+    height: 200;
+    border: 5px solid gray;
+   
+}
+
+form{
+    align-items: center;
+    size: 50cap;
+}
