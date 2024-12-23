@@ -1,34 +1,38 @@
 //import React  from "react";
-import logo from '../images/logo.png'
+import logo from '../images/logo.png';
+import { Link } from 'react-router-dom';
+import { FaHome } from "react-icons/fa";
+import { IoPerson } from "react-icons/io5";
 
 
- const Navbar = ({ show }) => {
-
+ const Navbar = ({show}) => {
+   
     return (
 
-        <div className={show ? 'sidenav active' : 'sidenav'}>
-
+        <> 
+        <div className= {show ? 'sidenav active' : 'sidenav'} >
+        
          <img src= {logo} alt= "logo" className="logo" />
             
             <ul>
                 <li> 
-                 <a href="/">  Home </a>
+                <Link to="/home">  <FaHome />  Home</Link> 
                 </li>
+                   
             </ul>
             <ul>
                 <li> 
-                    <a href="/"> About me </a>
+                <Link to="/about"> <IoPerson />  About Me </Link> 
                 </li>
             </ul>
-            <ul>
-                <li> 
-                    <a href="/"> forms </a>
-                </li>
-            </ul>
+           
+        
         </div>
-    )
+
+        </>
+    );
 }
    
 
 
-export default Navbar
+export default Navbar;
