@@ -1,19 +1,18 @@
-import React from 'react';
-import './App.css';
-//import './styles/style.css';  // For files inside src/styles
-//import Forms from './Components/Forms';
-import Home from './Components/Home';
-import { Button } from 'react-bootstrap/Button';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import React, { useState } from "react";  // Importing useState from React
+import Navbar from "./Components/Navbar";
+import { CiMenuBurger } from "react-icons/ci";
 
 function App() {
-  return (
-    <div className='App'>
-            <Home />
+  const [showNav, setShowNav] = useState(false);
 
-        </div>
-    
+  return (
+    <div className="App">
+      <header>
+        <CiMenuBurger onClick={() => setShowNav(!showNav)} />
+      </header>
+
+      <Navbar show={showNav} />
+    </div>
   );
 }
 

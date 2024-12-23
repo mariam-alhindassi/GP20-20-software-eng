@@ -1,13 +1,23 @@
 h1 {
     text-align:  center;
-    color: white;
+    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
+h2{
+    text-align:  center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
 body {
-    background-color: black;
+    background-color: rgb(252, 248, 248);
     align-items: center;
     text-align: center;
+    color: #333;
     
 
 }
@@ -20,7 +30,7 @@ button {
 }
 
 input[type=text]  {
-    width: 100%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -31,8 +41,8 @@ input [type=label]{
     color: blue;
 }
 
-.div1 {
-    background-color: white;
+.div {
+    background-color: yellow;
     align-items: center;
     width: 400;
     height: 200;
@@ -43,4 +53,59 @@ input [type=label]{
 form{
     align-items: center;
     size: 50cap;
+}
+
+.container {
+    box-sizing: 200 ;
+    background-color: yellow;
+}
+
+header {
+  padding: 30px;
+  background-color: black;
+  height: 100px;
+  color: white ;
+  text-align: left;
+}
+
+.sidenav {
+  width: 240px;
+  background: black ;
+  position: absolute;
+  height: 95vh;
+  padding: 0 30px;
+  left: -100;
+  transition: all 1s;
+}
+.sidenav.active {
+  left: 0;
+}
+
+
+ul {
+  padding: 0;
+
+}
+
+ul li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+ul li a {
+  text-decoration: black;
+  color: white;
+  font-size: 16px;
+  padding:  10px 15px;
+  display: block;
+  border-radius: 6px;
+}
+
+ul li a:hover,
+ul li a.active{
+  background: gray;
+}
+
+.logo {
+  width: 70px;
 }
