@@ -21,7 +21,7 @@ body {
    
     color:black;
     background-color: antiquewhite;
-    text-align: center;
+    text-align: left;
    
 
 }
@@ -122,6 +122,6 @@ ul li a.active{
   align-items: center;
   font-size: 16px;
   color: black;
-  text-align: center;
+  text-align: left;
   background-color: wheat;
 }

@@ -7,6 +7,7 @@ import About  from "./Components/Pages/About";
 import Home from "./Components/Pages/Home";
 import Contact from './Components/Pages/Contact';
 
+
  function App() {
 
     const [showNav, setShowNav] = useState(true)
@@ -32,6 +33,7 @@ import Contact from './Components/Pages/Contact';
        
           <Routes>
            
+            <Route index='/' element={<Home />} /> 
             <Route path='/home' element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={<Contact />} />
