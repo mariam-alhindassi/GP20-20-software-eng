@@ -2,7 +2,7 @@
 export default function About () {
     return (
         <div> 
-            <h1> About Me </h1>
+            <h2> About me </h2>
         </div>
     )
 }

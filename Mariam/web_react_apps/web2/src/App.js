@@ -2,10 +2,12 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Navbar from "./Components/Navbar";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { CiMenuBurger } from "react-icons/ci";
 import About  from "./Components/Pages/About";
 import Home from "./Components/Pages/Home";
-import Contact from './Components/Pages/Contact';
+//import Contact from './Components/Pages/Items';
+import Items from './Components/Pages/Items';
 
 
  function App() {
@@ -36,7 +38,7 @@ import Contact from './Components/Pages/Contact';
             <Route index='/' element={<Home />} /> 
             <Route path='/home' element={<Home />} />
             <Route path='/about' element={<About />} />
-            <Route path='/contact' element={<Contact />} />
+            <Route path='/items' element={<Items />} />
 
           </Routes>
          

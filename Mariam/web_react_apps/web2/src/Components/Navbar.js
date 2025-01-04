@@ -28,7 +28,7 @@ const Navbar = ({ show }) => {
         <ul>
           <li> 
            
-            <Link to="/contact"> <TiContacts /> conact </Link> 
+            <Link to="/items"> <TiContacts /> Add Items  </Link> 
           </li>
         </ul>
 
