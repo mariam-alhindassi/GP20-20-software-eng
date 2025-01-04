@@ -4,8 +4,10 @@ import { FaHome } from 'react-icons/fa';
 import { IoPerson } from 'react-icons/io5'; 
 import logo from './logo.png'; 
 import { TiContacts } from "react-icons/ti";
+import { CiMenuBurger } from "react-icons/ci";
 
-const Navbar = ({ show }) => {
+
+
   return (
     <> 
       <div className={show ? 'sidenav active' : 'sidenav'}>
@@ -36,6 +38,6 @@ const Navbar = ({ show }) => {
       </div>
     </>
   );
-};
+
 
 export default Navbar;
