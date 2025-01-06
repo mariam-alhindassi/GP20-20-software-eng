@@ -7,7 +7,7 @@ import Showitems from "./pages/Showitems";
 import Additems from "./pages/Additems";
 import Dashbord from "./pages/Dashbord";
 import { CiMenuBurger } from "react-icons/ci";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 //import NoPage from "./pages/NoPage";
 
 

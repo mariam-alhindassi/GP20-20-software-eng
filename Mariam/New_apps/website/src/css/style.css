@@ -1,0 +1,15 @@
+.Container {
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.Container-side-bar{
+    background-color: darkblue;
+    color: black;
+
+}
+
+.body {
+    background-color: gray;
+    color: black;
+ }
