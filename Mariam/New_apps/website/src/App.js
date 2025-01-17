@@ -1,36 +1,41 @@
 
 import './css/style.css';       
-import Navbar from './components/Navbar';
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+//import LoginPage from './pages/Login';
 import Home from './pages/Home';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+import LoginPage from './pages/LoginPage';
+import PageNotFound from './pages/PageNotFound';
+import Emp from './pages/subpages/Emp';
+import Navbar from './components/Navbar'
+import Task from './pages/Task';
+import Profile from './pages/Profile';
+import Dashbord from './pages/Dashbord';
+
+
+
+
 
 
 function App() {
   return (
  
     <>
-  
-
-  <div style={{height: "100vh", direction :"rtl"}} className = "body">
-    
-    <Sidebar>
-      <Menu >
-      <MenuItem> Dashbord </MenuItem>
-
-      <MenuItem>الصفحة الرئيسية  </MenuItem>
-
-        <SubMenu label="بيانات الموظفين ">
-       <MenuItem > قاىمة الموظفين </MenuItem>
-      <MenuItem > الطلبات </MenuItem>
-      </SubMenu>
-     
-      </Menu>
-       </Sidebar>
- 
-
-    </div>
-
+    <header> 
+      <h1> Home Page</h1>
+      <Navbar />
+    </header>
+    <Router>
+      <Routes>
+        <Route path="/" element ={<LoginPage />} />
+        <Route path='/home' element={<Home />} />
+        <Route path='/emp' element ={<Emp />} />
+        <Route path='*' element = {<PageNotFound />} /> 
+        <Route path='/task' element ={<Task />} />
+        <Route path='profile' element ={<Profile /> } /> 
+        <Route path='loginpage' element ={<LoginPage /> } /> 
+        <Route path='/dashbord' element = {<Dashbord />} />
+      </Routes>
+    </Router>
     </>
 
   );
