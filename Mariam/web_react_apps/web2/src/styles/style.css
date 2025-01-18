@@ -1,0 +1,128 @@
+h1 {
+   
+    color: black ;
+    font-family: 'Segoe UI';
+    text-align: center;
+    font-size: 25px;
+    padding-top:0;
+    
+
+}
+
+h2{
+    text-align:  left;
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+body {
+   
+    color:black;
+    background-color: antiquewhite;
+    text-align: left;
+   
+
+}
+button {
+    background-color: green;
+    color: white;
+    display: inline-block;
+    size: 50;
+    border: 20vmax;
+}
+
+input[type=text]  {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+input [type=label]{
+    text-align: center;
+    color: blue;
+}
+
+.div {
+    background-color: yellow;
+    align-items: center;
+    width: 400;
+    height: 200;
+    border: 5px solid gray;
+   
+}
+
+form{
+    align-items: center;
+    size: 50cap;
+}
+
+.container {
+    box-sizing: 200 ;
+    background-color: yellow;
+}
+
+header {
+  padding: 30px;
+  background-color: black;
+  height: 100px;
+  color: gray ;
+  text-align: left;
+}
+
+.sidenav {
+  width: 240px;
+  background: black ;
+  position: absolute;
+  height: 95vh;
+  padding: 0 30px;
+  left: -100;
+  transition: 1s;
+}
+.sidenav.active {
+  
+  left: 0;
+}
+
+
+ul {
+  padding: 0;
+
+}
+
+ul li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+ul li a {
+  text-decoration: black;
+  color: white;
+  font-size: 16px;
+  padding:  10px 15px;
+  display: block;
+  border-radius: 6px;
+}
+
+ul li a:hover,
+ul li a.active{
+  background: gray;
+}
+
+.logo {
+  width: 70px;
+}
+
+.main {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: black;
+  text-align: left;
+  background-color: wheat;
+}
+
